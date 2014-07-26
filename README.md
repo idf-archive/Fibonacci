@@ -1,4 +1,4 @@
 Fibonacci
 =========
 
-Advanced solution for Fibonacci Numbers
+Handy solutions for Fibonacci Numbers
