@@ -45,10 +45,13 @@ def fib_3(n):
   return int(f_n+0.5)
   
 
-# Matrix form 
 def fib_4(n):
   '''
+  Matrix Form 
+
   {F_{k+2} \choose F_{k+1}} &= \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix} {F_{k+1} \choose F_{k}} 
+
+  http://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form
   '''
   if n==0:
     return 0
@@ -62,10 +65,12 @@ def fib_4(n):
     a = [
     [a[0][0]+a[1][0], a[1][0]+a[1][1]],
     [a[0][0], a[0][1]]
-    ]
-
-  
+    ]  
+    
   return a[0][1]
+
+
+
 
 if __name__=="__main__":
   assert fib_0(100)==354224848179261915075
